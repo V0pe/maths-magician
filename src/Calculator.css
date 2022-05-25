@@ -12,10 +12,10 @@ main {
     text-align: center; 
     position: absolute;
     right: 5rem;
-    top: 10rem;
+    top:3rem;
     gap:0.1rem;
     width: 50%;
-    min-height: 50vh;
+    min-height: 40vh;
 
 }
 
