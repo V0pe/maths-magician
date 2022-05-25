@@ -1,0 +1,47 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: grey;
+    color: black;
+    text-align: center; 
+    position: absolute;
+    right: 5rem;
+    top: 10rem;
+    gap:0.1rem;
+    width: 50%;
+    min-height: 50vh;
+
+}
+
+.item {
+    padding:2rem;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+
+.result {
+    grid-column: 1/5;
+    background-color: grey;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.no-0 {
+    grid-column: 1/3;
+}
+
+.divide,
+.multiply,
+.substract,
+.add,
+.equal {
+    background-color: orange;
+}
