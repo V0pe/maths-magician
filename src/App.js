@@ -1,6 +1,5 @@
-// eslint-disable-next-line react/prefer-stateless-function
 import React from 'react';
-import Calculator from './Calculator';
+import Calculator from './components/Calculator';
 
 class App extends React.PureComponent {
   render() {

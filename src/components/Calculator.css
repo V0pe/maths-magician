@@ -18,6 +18,11 @@ main {
   min-height: 40vh;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 .item {
   padding: 2rem;
   background-color: antiquewhite;
