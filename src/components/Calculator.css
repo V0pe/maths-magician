@@ -20,6 +20,7 @@ main {
 
 button {
   border:none;
+  cursor: pointer;
 }
 
 .item {
