@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prefer-stateless-function
-import React from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
 import Calculate from '../logic/calculate';
 
