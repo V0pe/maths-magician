@@ -9,7 +9,6 @@ const Calculator = () => {
     operation: null,
   });
 
-
   const eventClick = (e) => {
     setResult((result) => ({
       ...result,
