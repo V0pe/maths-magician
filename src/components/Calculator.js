@@ -1,24 +1,14 @@
-// eslint-disable-next-line react/prefer-stateless-function
 import React, { useState } from 'react';
 import './Calculator.css';
 import Calculate from '../logic/calculate';
 
-// class Calculator extends React.Component {
 const Calculator = () => {
-  // constructor(props) {
-  //   super(props);
-  // this.state = {
-  //   total: 0,
-  //   next: null,
-  //   operation: null,
-  // };
   const [result, setResult] = useState({
     total: 0,
     next: null,
     operation: null,
   });
 
-  // }
 
   const eventClick = (e) => {
     setResult((result) => ({
@@ -27,7 +17,6 @@ const Calculator = () => {
     }));
   };
 
-  // render() {
   const { total, next, operation } = result;
 
   return (
@@ -60,6 +49,5 @@ const Calculator = () => {
     </main>
   );
 };
-// }
 
 export default Calculator;
