@@ -1,50 +1,48 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
 }
 
 .navBar ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    font-size: 1.5rem;
-    color: black;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .navBar ul li {
-    margin: 0 1rem;
-    
+  margin: 0 1rem;
 }
 
 .active {
-    color: orangered;
-    text-decoration: underline;
-  }
+  color: orangered;
+  text-decoration: underline;
+}
 
 .quote {
   position: relative;
-  top:15rem;
-  margin:0 5rem;
+  top: 15rem;
+  margin: 0 5rem;
   font-size: 1.5rem;
 }
 
 .quote i {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .calculator h2 {
-   margin: 3rem 2rem;
-   font-size: 2rem;
+  margin: 3rem 2rem;
+  font-size: 2rem;
 }
 
 .home h2 {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .home p {
   margin: 1rem 2rem;
 }
-
