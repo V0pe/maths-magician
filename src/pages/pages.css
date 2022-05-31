@@ -22,3 +22,15 @@ header {
     color: orangered;
     text-decoration: underline;
   }
+
+.quote {
+  position: relative;
+  top:15rem;
+  margin:0 5rem;
+  font-size: 1.5rem;
+}
+
+.quote i {
+    display: flex;
+    justify-content: flex-end;
+}
