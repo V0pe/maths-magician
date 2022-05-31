@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 export default function About() {
   return (
     <>
@@ -14,9 +12,6 @@ export default function About() {
           <i>Richard Courant, German-American mathematician </i>
         </q>
       </section>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
     </>
   );
 }
