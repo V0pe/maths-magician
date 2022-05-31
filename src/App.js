@@ -12,7 +12,7 @@ class App extends React.PureComponent {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="about" element={<CalculatorPage />} />
+          <Route exact path="CalculatorPage" element={<CalculatorPage />} />
           <Route exact path="quote" element={<Quote />} />
         </Routes>
       </div>
