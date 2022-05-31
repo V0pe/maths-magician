@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.navBar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navBar ul li {
+    margin: 0 1rem;
+    
+}
+
+.active {
+    color: orangered;
+    text-decoration: underline;
+  }

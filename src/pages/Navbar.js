@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './pages.css';
 
 const Navbar = () => {
   const links = [
@@ -19,6 +20,7 @@ const Navbar = () => {
       text: 'Quote',
     },
   ];
+
   return (
     <header>
       <h1>Math Magician</h1>
@@ -26,9 +28,11 @@ const Navbar = () => {
         <ul>
           {links.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path}>{link.text}</NavLink>
+              <NavLink to={link.path}>
+                {link.text}
+              </NavLink>
             </li>
-          ))}
+          )).reduce((acc, x) => (acc === null ? [x] : [acc, ' | ', x]), null)}
         </ul>
       </nav>
     </header>
