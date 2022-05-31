@@ -39,3 +39,12 @@ header {
    margin: 3rem 2rem;
    font-size: 2rem;
 }
+
+.home h2 {
+    margin-left: 2rem;
+}
+
+.home p {
+  margin: 1rem 2rem;
+}
+
