@@ -40,7 +40,7 @@ const Calculator = () => {
       <button type="button" className="item no-1" name="1" data-testid="no-1" onClick={eventClick}>1</button>
       <button type="button" className="item no-2" name="2" data-testid="no-2" onClick={eventClick}>2</button>
       <button type="button" className="item no-3" name="3" data-testid="no-3" onClick={eventClick}>3</button>
-      <button type="button" className="item add" name="+"  data-testid="+" onClick={eventClick}>+</button>
+      <button type="button" className="item add" name="+" data-testid="+" onClick={eventClick}>+</button>
       <button type="button" className="item no-0" name="0" data-testid="0" onClick={eventClick}>0</button>
       <button type="button" className="item dot" name="." data-testid="." onClick={eventClick}>.</button>
       <button type="button" className="item equal" name="=" data-testid="=" onClick={eventClick}>= </button>
