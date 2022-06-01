@@ -20,7 +20,7 @@ const Calculator = () => {
 
   return (
     <main>
-      <div id="result" className="item result">
+      <div data-testid="result" className="item result">
         {total}
         {operation}
         {next}
@@ -37,7 +37,7 @@ const Calculator = () => {
       <button type="button" className="item no-5" name="5" onClick={eventClick}> 5 </button>
       <button type="button" className="item no-6" name="6" onClick={eventClick}> 6 </button>
       <button type="button" className="item substract" name="-" onClick={eventClick}> - </button>
-      <button type="button" className="item no-1" name="1" onClick={eventClick}> 1 </button>
+      <button type="button" className="item no-1" name="1" data-testid="no-1" onClick={eventClick}> 1 </button>
       <button type="button" className="item no-2" name="2" onClick={eventClick}> 2 </button>
       <button type="button" className="item no-3" name="3" onClick={eventClick}> 3 </button>
       <button type="button" className="item add" name="+" onClick={eventClick}> + </button>
