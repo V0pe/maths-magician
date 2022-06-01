@@ -108,7 +108,6 @@ test('1 divide 1 should be 1', () => {
   const { getByTestId } = render(<Calculator />);
   const no1 = getByTestId('no-1');
   const result = getByTestId('result');
-  const substract = getByTestId('-');
   const divide = getByTestId('/');
   const equal = getByTestId('=');
 
@@ -121,18 +120,16 @@ test('1 divide 1 should be 1', () => {
 });
 
 test('1 subtract from 1 should be 0', () => {
-    const { getByTestId } = render(<Calculator />);
-    const no1 = getByTestId('no-1');
-    const result = getByTestId('result');
-    const substract = getByTestId('-');
-    const divide = getByTestId('/');
-    const equal = getByTestId('=');
+  const { getByTestId } = render(<Calculator />);
+  const no1 = getByTestId('no-1');
+  const result = getByTestId('result');
+  const substract = getByTestId('-');
+  const equal = getByTestId('=');
 
-    fireEvent.click(no1);
-    fireEvent.click(substract);
-    fireEvent.click(no1);
-    fireEvent.click(equal);
-  
-    expect(result.textContent).toBe('0');
+  fireEvent.click(no1);
+  fireEvent.click(substract);
+  fireEvent.click(no1);
+  fireEvent.click(equal);
 
+  expect(result.textContent).toBe('0');
 });
