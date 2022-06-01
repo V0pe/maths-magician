@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshot 1`] = `
+<main>
+  <div
+    className="item result"
+    data-testid="result"
+  >
+    0
+  </div>
+  <button
+    className="item reset"
+    data-testid="AC"
+    name="AC"
+    onClick={[Function]}
+    type="button"
+  >
+    AC
+  </button>
+  <button
+    className="item order"
+    data-testid="+/-"
+    name="+/-"
+    onClick={[Function]}
+    type="button"
+  >
+    +/-
+  </button>
+  <button
+    className="item percent"
+    data-testid="%"
+    name="%"
+    onClick={[Function]}
+    type="button"
+  >
+    %
+  </button>
+  <button
+    className="item divide"
+    data-testid="/"
+    name="÷"
+    onClick={[Function]}
+    type="button"
+  >
+    /
+  </button>
+  <button
+    className="item no-7"
+    data-testid="no-7"
+    name="7"
+    onClick={[Function]}
+    type="button"
+  >
+    7
+  </button>
+  <button
+    className="item no-8"
+    data-testid="no-8"
+    name="8"
+    onClick={[Function]}
+    type="button"
+  >
+    8
+  </button>
+  <button
+    className="item no-9"
+    data-testid="no-9"
+    name="9"
+    onClick={[Function]}
+    type="button"
+  >
+    9
+  </button>
+  <button
+    className="item multiply"
+    data-testid="X"
+    name="x"
+    onClick={[Function]}
+    type="button"
+  >
+    X
+  </button>
+  <button
+    className="item no-4"
+    data-testid="no-4"
+    name="4"
+    onClick={[Function]}
+    type="button"
+  >
+    4
+  </button>
+  <button
+    className="item no-5"
+    data-testid="no-5"
+    name="5"
+    onClick={[Function]}
+    type="button"
+  >
+    5
+  </button>
+  <button
+    className="item no-6"
+    data-testid="no-6"
+    name="6"
+    onClick={[Function]}
+    type="button"
+  >
+    6
+  </button>
+  <button
+    className="item substract"
+    data-testid="-"
+    name="-"
+    onClick={[Function]}
+    type="button"
+  >
+     - 
+  </button>
+  <button
+    className="item no-1"
+    data-testid="no-1"
+    name="1"
+    onClick={[Function]}
+    type="button"
+  >
+    1
+  </button>
+  <button
+    className="item no-2"
+    data-testid="no-2"
+    name="2"
+    onClick={[Function]}
+    type="button"
+  >
+    2
+  </button>
+  <button
+    className="item no-3"
+    data-testid="no-3"
+    name="3"
+    onClick={[Function]}
+    type="button"
+  >
+    3
+  </button>
+  <button
+    className="item add"
+    data-testid="+"
+    name="+"
+    onClick={[Function]}
+    type="button"
+  >
+    +
+  </button>
+  <button
+    className="item no-0"
+    data-testid="0"
+    name="0"
+    onClick={[Function]}
+    type="button"
+  >
+    0
+  </button>
+  <button
+    className="item dot"
+    data-testid="."
+    name="."
+    onClick={[Function]}
+    type="button"
+  >
+    .
+  </button>
+  <button
+    className="item equal"
+    data-testid="="
+    name="="
+    onClick={[Function]}
+    type="button"
+  >
+    = 
+  </button>
+</main>
+`;
