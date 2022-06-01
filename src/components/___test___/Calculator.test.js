@@ -1,8 +1,8 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { render, fireEvent, cleanup } from '@testing-library/react';
 import Calculator from '../Calculator';
 import '@testing-library/jest-dom/extend-expect';
-import renderer from 'react-test-renderer';
 
 afterEach(() => {
   cleanup();
@@ -100,23 +100,39 @@ test('AC button rendered with clean slate', () => {
 });
 
 test('match snapshot', () => {
-    const tree = renderer.create(<Calculator />).toJSON();
-    expect(tree).toMatchSnapshot();
+  const tree = renderer.create(<Calculator />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
 test('1 divide 1 should be 1', () => {
+  const { getByTestId } = render(<Calculator />);
+  const no1 = getByTestId('no-1');
+  const result = getByTestId('result');
+  const substract = getByTestId('-');
+  const divide = getByTestId('/');
+  const equal = getByTestId('=');
+
+  fireEvent.click(no1);
+  fireEvent.click(divide);
+  fireEvent.click(no1);
+  fireEvent.click(equal);
+
+  expect(result.textContent).toBe('1');
+});
+
+test('1 subtract from 1 should be 0', () => {
     const { getByTestId } = render(<Calculator />);
     const no1 = getByTestId('no-1');
     const result = getByTestId('result');
     const substract = getByTestId('-');
     const divide = getByTestId('/');
     const equal = getByTestId('=');
-    const AC = getByTestId('AC');
-  
+
     fireEvent.click(no1);
-    fireEvent.click(divide);
+    fireEvent.click(substract);
     fireEvent.click(no1);
     fireEvent.click(equal);
   
-    expect(result.textContent).toBe('1');
-  });
+    expect(result.textContent).toBe('0');
+
+});
