@@ -133,3 +133,23 @@ test('1 subtract from 1 should be 0', () => {
 
   expect(result.textContent).toBe('0');
 });
+
+test('= button rendered inbetween number in result area', () => {
+  const { getByTestId } = render(<Calculator />);
+  const no1 = getByTestId('no-1');
+  const result = getByTestId('result');
+  const no2 = getByTestId('no-2');
+  const no3 = getByTestId('no-3');
+  const dot = getByTestId('.');
+  const add = getByTestId('+');
+
+  fireEvent.click(no1);
+  fireEvent.click(dot);
+  fireEvent.click(no2);
+  fireEvent.click(add);
+  fireEvent.click(no1);
+  fireEvent.click(dot);
+  fireEvent.click(no2);
+
+  expect(result.textContent).toBe('2.4');
+});
