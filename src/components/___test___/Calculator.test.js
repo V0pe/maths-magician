@@ -134,14 +134,14 @@ test('1 subtract from 1 should be 0', () => {
   expect(result.textContent).toBe('0');
 });
 
-test('= button rendered inbetween number in result area', () => {
+test('= 1.2 add 1.2 render to 2.4', () => {
   const { getByTestId } = render(<Calculator />);
   const no1 = getByTestId('no-1');
   const result = getByTestId('result');
   const no2 = getByTestId('no-2');
-  const no3 = getByTestId('no-3');
   const dot = getByTestId('.');
   const add = getByTestId('+');
+  const equal = getByTestId('=');
 
   fireEvent.click(no1);
   fireEvent.click(dot);
@@ -150,6 +150,7 @@ test('= button rendered inbetween number in result area', () => {
   fireEvent.click(no1);
   fireEvent.click(dot);
   fireEvent.click(no2);
+  fireEvent.click(equal);
 
   expect(result.textContent).toBe('2.4');
 });
