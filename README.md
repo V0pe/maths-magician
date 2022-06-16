@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Live Deploy 
+
+[Heroku](https://maths-magician-app.herokuapp.com/).
+
 ### `npm start`
 
 Runs the app in the development mode.\
